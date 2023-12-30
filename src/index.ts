@@ -3,7 +3,9 @@ import { loadCommands, loadEvents } from "./utils/loaders";
 import { registerEvents } from "./utils/register-events";
 
 // Initialize the client
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
+});
 
 // Load the events and commands
 const events = await loadEvents(new URL("events/", import.meta.url));

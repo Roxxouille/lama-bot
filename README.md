@@ -1,15 +1,5 @@
 # lama-bot
 
-To install dependencies:
+This is my own discord bot so i don't have to add to many bot to my discord server !
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.14. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Made with Bun and hosted on https://fly.io/
