@@ -6,7 +6,8 @@
     "start": "bun run src/index.ts",
     "dev": "bun run --watch src/index.ts",
     "lint": "bun eslint .",
-    "format": "bun prettier . --write"
+    "format": "bun prettier . --write",
+    "deploy:discord": "bun run src/utils/deploy.ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "latest",
@@ -18,5 +19,9 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@discordjs/core": "^1.1.1",
+    "discord.js": "^14.14.1"
   }
 }
