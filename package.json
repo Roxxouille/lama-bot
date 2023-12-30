@@ -2,8 +2,19 @@
   "name": "lama-bot",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "lint": "bun eslint .",
+    "format": "bun prettier . --write"
+  },
   "devDependencies": {
-    "bun-types": "latest"
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "bun-types": "latest",
+    "eslint": "latest",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "prettier": "^3.1.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
