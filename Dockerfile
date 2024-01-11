@@ -24,9 +24,6 @@ RUN apt-get update -qq && \
 COPY --link bun.lockb package.json ./
 RUN bun install --ci
 
-# Run the deploy command
-RUN bun deploy:discord
-
 # Copy application code
 COPY --link . .
 
