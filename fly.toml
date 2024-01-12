@@ -17,6 +17,10 @@ min_machines_running = 1
 [[services.ports]]
 port = 8080
 
+[mounts]
+source = "lama_data"
+destination = "/data"
+
 [[vm]]
 cpu_kind = "shared"
 cpus = 1
